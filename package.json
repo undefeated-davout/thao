@@ -1,7 +1,9 @@
 {
+  "name": "thao",
+  "version": "1.0.0",
   "private": true,
   "main": "main/index.js",
-  "productName": "ElectronTypescriptNext",
+  "productName": "thao",
   "scripts": {
     "clean": "rimraf dist main renderer/out renderer/.next",
     "dev": "npm run build-electron && electron .",
@@ -34,5 +36,13 @@
       "main",
       "renderer/out"
     ]
+  },
+  "mac": {
+    "target": "dmg",
+    "icon": "build/icon.png"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "build/icon.png"
   }
 }
